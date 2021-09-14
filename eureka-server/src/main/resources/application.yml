@@ -1,0 +1,1 @@
+server:  port: 9000spring:  application:    name: eureka-servereureka:  instance:    hostname: localhost  client:    service-url:  # eureka的地址信息      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/    fetch-registry: false #是否从eureka server 中获取注册的服务信息
