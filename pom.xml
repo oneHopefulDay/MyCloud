@@ -4,7 +4,9 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>eureka-server</module>
-	</modules>
+		<module>order-service</module>
+		<module>user-service</module>
+    </modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
