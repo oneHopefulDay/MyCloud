@@ -1,9 +1,10 @@
 package com.zjipst.order.service.impl;
 
+import com.zjipst.constant.User;
 import com.zjipst.order.dao.OrderMapper;
 import com.zjipst.order.service.OrderService;
 import com.zjipst.order.entity.Order;
-import com.zjipst.user.entity.User;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

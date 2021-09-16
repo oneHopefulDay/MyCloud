@@ -1,8 +1,11 @@
 package com.zjipst.order.entity;
 
 
-import com.zjipst.user.entity.User;
+
+
+import com.zjipst.constant.User;
 import lombok.Data;
+
 
 /**
  * @author songhao
