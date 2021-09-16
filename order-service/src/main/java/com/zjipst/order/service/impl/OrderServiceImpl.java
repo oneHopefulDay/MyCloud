@@ -26,7 +26,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public Order getOrderById(Long id) {
         Order order = orderMapper.getOrder(id);
-        String url = "http://userService/getUser/1";
+        String url = "http://userService/getUser/"+order.getUserId();
         User user = restTemplate.getForObject(url, User.class);
         order.setUser(user);
         return order;

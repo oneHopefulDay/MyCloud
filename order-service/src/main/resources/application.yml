@@ -15,3 +15,7 @@ eureka:
     service-url:  # eureka的地址信息
       defaultZone: http://${eureka.instance.hostname}:9000/eureka/
     fetch-registry: true #是否从eureka server 中获取注册的服务信息
+mybatis:
+  type-aliases-package: com.zjipst.order.entity
+  configuration:
+    map-underscore-to-camel-case: true  #定义mybatis的映射关系 eg:a_xm -> aXm
