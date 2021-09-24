@@ -19,3 +19,12 @@ mybatis:
   type-aliases-package: com.zjipst.order.entity
   configuration:
     map-underscore-to-camel-case: true  #定义mybatis的映射关系 eg:a_xm -> aXm
+userService:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+ribbon:
+  eager-load:
+    clients:
+      - userService
+    enabled: true

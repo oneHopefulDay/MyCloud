@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class UserController {
 
-    private static Logger logger = LoggerFactory.getLogger(UserController.class);
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
 
     @Autowired
@@ -24,7 +24,6 @@ public class UserController {
     @RequestMapping("/getUser/{id}")
     @ResponseBody
     public Object getUserById(@PathVariable Long id){
-        logger.info("----");
         return userService.getUserById(id);
     }
 
