@@ -1,4 +1,4 @@
-package com.zjipst.constant;
+package com.zjipst.pojo;
 
 import lombok.Data;
 

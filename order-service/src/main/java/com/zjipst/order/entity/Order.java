@@ -3,7 +3,8 @@ package com.zjipst.order.entity;
 
 
 
-import com.zjipst.constant.User;
+
+import com.zjipst.pojo.User;
 import lombok.Data;
 
 
