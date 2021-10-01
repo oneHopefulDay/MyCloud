@@ -54,7 +54,7 @@ public class UserController {
         return userService.getUserById(id);
     }
 
-    @RequestMapping("/listUser")
+    @RequestMapping("/listUsers")
     @ResponseBody
     public Object getUserById(){
         return userService.list();

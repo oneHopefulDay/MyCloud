@@ -46,6 +46,11 @@ public class OrderServiceImpl implements OrderService {
 
     @Override
     public List<Order> list() {
-        return orderMapper.list();
+        List<Order> orders = orderMapper.list();
+        for(Order order:orders){
+            User user = userClient.findByUserId(order.getUserId());
+            order.setUser(user);
+        }
+        return orders;
     }
 }
